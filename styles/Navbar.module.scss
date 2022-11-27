@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'AmasticSC';
+	src: url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+}
+
+.nav {
+
+	font-family: 'Amatic SC', cursive;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-image: blur(10px);
+
+	// position: fixed;
+	// top: 0;
+	// right: 0;
+
+	.logo {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		&_title {
+			padding-left: 20px;
+		}
+
+	}
+
+	// .logo_title {
+	// 	padding-left: 20px;
+	// }
+
+	.links {
+		height: 100%;
+	}
+
+	a {
+		height: 100%;
+		display: inline-flex;
+		align-items: center;
+		padding: 0 10px;
+		text-transform: uppercase;
+		color: #fff;
+		text-decoration: none;
+		font-size: 16px;
+		color: white;
+
+		&.active,
+		&:hover {
+			color: rgb(247, 186, 33);
+			font-weight: 700;
+		}
+	}
+}
