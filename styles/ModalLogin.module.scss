@@ -8,16 +8,44 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transform: scale(0);
+	opacity: 0;
+	pointer-events: none;
+
+	transition: 0.5s;
 
 	&__content {
 		padding: 20px;
 		border-radius: 12px;
 		background-color: rgba($color: #ffffff, $alpha: 0.9);
+		transform: scale(0.5);
+		transition: 0.4s all;
+		width: 30vw;
+
+		&.active {
+			transform: scale(1);
+		}
+
 
 	}
 
+	&__form {
+		display: flex;
+		flex-direction: column;
+		color: black;
+		size: 10px;
+
+		&_label {
+			width: 30%;
+		}
+
+		&_input {
+			margin: 5px;
+			width: 70%;
+		}
+	}
+
 	&.active {
-		transform: scale(1);
+		opacity: 1;
+		pointer-events: all;
 	}
 }
